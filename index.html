@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahid Enterprises | Heavy Machinery Import & Export</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+
+    body { background: #0f172a; color: #e5e7eb; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background: #020617;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 { color: #facc15; font-size: 22px; }
+
+    nav a {
+      margin-left: 20px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: #facc15; }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 8%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: linear-gradient(120deg, #020617, #1e293b);
+    }
+
+    .hero h2 { font-size: 38px; color: #facc15; }
+    .hero p { margin: 15px 0; line-height: 1.6; }
+
+    .btn {
+      display: inline-block;
+      background: #facc15;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover { background: #fde047; }
+
+    .hero img { width: 100%; border-radius: 15px; box-shadow: 0 0 30px rgba(0,0,0,0.5); }
+
+    /* Services */
+    .services { padding: 60px 8%; }
+    .services h2 { text-align: center; font-size: 30px; margin-bottom: 30px; color: #facc15; }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background: #020617;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .service-box:hover { transform: translateY(-8px); border: 1px solid #facc15; }
+
+    /* Products */
+    .products { padding: 60px 8%; background: #020617; }
+    .products h2 { text-align: center; font-size: 30px; margin-bottom: 30px; color: #facc15; }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #0f172a;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product-card:hover { transform: scale(1.05); }
+
+    .product-card img { width: 100%; border-radius: 10px; height: 160px; object-fit: cover; }
+
+    /* About */
+    .about { padding: 60px 8%; }
+    .about h2 { font-size: 28px; color: #facc15; }
+    .about p { margin-top: 10px; line-height: 1.6; }
+
+    /* Contact */
+    .contact { padding: 60px 8%; background: #020617; }
+    .contact h2 { text-align: center; font-size: 30px; color: #facc15; }
+
+    .contact form {
+      max-width: 600px;
+      margin: 20px auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #020617;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero h2 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+
+<header>
+  <h1>Shahid Enterprises</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Shahid Enterprises | Heavy Machinery Import & Export</h2>
+    <p>We provide high-quality construction and industrial machines worldwide. Excavators, Bulldozers, Cranes, Loaders and more at best prices.</p>
+    <a class="btn" href="#contact">Get Quote</a>
+  </div>
+  <img src="logo.png" alt="Shahid Enterprises Logo">
+</section>
+
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <h3>Import Services</h3>
+      <p>We import heavy machinery from USA, China, Japan, and Europe.</p>
+    </div>
+    <div class="service-box">
+      <h3>Export Services</h3>
+      <p>We export machinery to Middle East, Africa, and Asia.</p>
+    </div>
+    <div class="service-box">
+      <h3>Maintenance & Parts</h3>
+      <p>Original spare parts and maintenance support available.</p>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <h2>Popular Machines</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b" />
+      <h4>Excavator</h4>
+      <p>Powerful digging machine for construction.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1501706362039-c6b2a4a7e8f3" />
+      <h4>Bulldozer</h4>
+      <p>Used for pushing soil, sand and debris.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1605880128704-b1c5f1e2b3d4" />
+      <h4>Crane</h4>
+      <p>Heavy lifting machine for big projects.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>Shahid Enterprises is a trusted heavy machinery import & export company. We focus on quality, safety, and affordable prices.</p><p>شاہد انٹرپرائزز ایک قابلِ اعتماد ہیوی مشینری امپورٹ اینڈ ایکسپورٹ کمپنی ہے۔</p>
+</section>
+
+<a href="https://wa.me/923331320481" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 15px;border-radius:50%;font-size:20px;text-decoration:none;">💬</a>
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center; margin:10px 0; font-weight:600;">📞 0333 1320481 | 0317 2221121</p><form onsubmit="alert('Message Sent Successfully!'); return false;">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button class="btn">Send Message</button>
+  </form>
+<div style="margin-top:20px;">
+<iframe src="https://maps.google.com/maps?q=Karachi%20Pakistan&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;"></iframe>
+</div>
+</section>
+
+<footer>
+  <p>© 2026 Shahid Enterprises | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
